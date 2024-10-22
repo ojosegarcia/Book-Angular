@@ -16,6 +16,7 @@
             *ngIf="titulo.touched && titulo.hasError('required')"
             class="text-danger"
           >
+            *O título é requerido!
           </small>
           <div class="mt-3">
             <label for="name" class="form-label">Autor</label>
@@ -43,6 +44,16 @@
               id="preco"
               formControlName="preco"
             />
+          </div>
+          <div class="d-grid mt-4">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="!formGroupBooks.valid"
+              (click)="save()"
+            >
+              Salvar
+            </button>
           </div>
         </form>
       </div>

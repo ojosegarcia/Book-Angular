@@ -31,4 +31,14 @@ loadBooks() {
   })
 }
 
+save() {
+  this.service.save(this.formGroupBooks.value).subscribe({
+    next: data => {
+      this.books.push(data)
+      this.formGroupBooks.reset();
+    }
+  })
+}
+
+
 }
