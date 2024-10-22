@@ -1,0 +1,48 @@
+{
+
+     "books": [
+    
+     {
+    
+        "id": 1,
+    
+        "titulo": "O Hobbit",
+    
+        "autor": "J. R. R. Tolkien",
+    
+        "editora": "HarperCollins",
+    
+        "preco": 52
+     },
+    
+     {
+    
+         "id": 2,
+    
+        "titulo": "Meu Pé de Laranja Lima",
+    
+        "autor": "José Mauro de Vasconcelos",
+    
+        "editora": "Editora Melhoramentos",
+    
+        "preco": 30
+    
+     },
+    
+     {
+    
+        "id": 3,
+    
+        "titulo": "Harry Potter e a Pedra Filosofal",
+    
+        "autor": "J. K. Rowling",
+    
+        "editora": "Rocco",
+    
+        "preco": 50
+    
+        }
+    
+     ]
+    
+}
