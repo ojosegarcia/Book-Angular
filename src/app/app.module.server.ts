@@ -10,8 +10,6 @@ import { BookService } from './book.service';
 import { BooksComponent } from './books/books.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
 
@@ -21,10 +19,9 @@ import { BrowserModule } from '@angular/platform-browser';
     FooterComponent,
     HomeComponent,
     BooksComponent
-  ],
+  ]
   imports: [
-    AppRoutingModule,
-    BrowserModule,
+    AppModule,
     ServerModule,
     ReactiveFormsModule,
     HttpClientModule
