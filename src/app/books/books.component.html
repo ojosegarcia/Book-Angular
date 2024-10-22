@@ -1,1 +1,51 @@
-<p>books works!</p>
+<div class="container bg-light p-4">
+    <div class="row">
+      <div class="col-8 m-auto">
+        <form [formGroup]="formGroupBooks">
+          <h1 class="text-center">Cadastro de livros</h1>
+          <div class="mt-3">
+            <label for="title" class="form-label">Título</label>
+            <input
+              type="text"
+              class="form-control"
+              id="titulo"
+              formControlName="titulo"
+            />
+          </div>
+          <small
+            *ngIf="titulo.touched && titulo.hasError('required')"
+            class="text-danger"
+          >
+          </small>
+          <div class="mt-3">
+            <label for="name" class="form-label">Autor</label>
+            <input
+              type="text"
+              class="form-control"
+              id="autor"
+              formControlName="autor"
+            />
+          </div>
+          <div class="mt-3">
+            <label for="course" class="form-label">Editora</label>
+            <input
+              type="text"
+              class="form-control"
+              id="editora"
+              formControlName="editora"
+            />
+          </div>
+          <div class="mt-3">
+            <label for="course" class="form-label">Preço</label>
+            <input
+              type="number"
+              class="form-control"
+              id="preco"
+              formControlName="preco"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
